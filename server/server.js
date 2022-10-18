@@ -4,7 +4,7 @@
 // -> Server ShutDown: CTRL + C, then Y (Yes) and Enter
 
 
-//! -------------- Express Settings App Listen on port 5000 --------------
+// ---------- Express Settings App Listen on port 5000 ----------
 
 // Express Backend Server
 const express = require("express");
@@ -14,11 +14,10 @@ const app = express()
 // App listening on the port of 5000 (Backend Server IS Online)
 app.listen(5000, () => {console.log("Server started on port 5000") })
 
-//! -------------- App Listen on port 5000 Vége --------------
+// ---------- App is Listening on port 5000 Over ----------
 
 
-
-//! -------------- Cheerio Settings SetUp --------------
+// ---------- Cheerio Settings SetUp ----------
 
 // request legyen egyenlő request Module-al
 // cheerio legyen egyenlő cheerio Module-al
@@ -29,7 +28,7 @@ const cheerio = require('cheerio');
 // tatabanyaVertesCenterUrlHrefLink: Weboldal Target, ahol a filmek adatait lehet megszerezni
 tatabanyaVertesCenterUrlHrefLink = "https://vertescenter.mimozink.hu/"
 
-//! -------------- Cheerio Settings SetUp Vége --------------
+// ---------- Cheerio Settings SetUp Vége ----------
 
 
 // request kérj request-et tatabanyaVertesCenterUrlHrefLink html-től
@@ -65,7 +64,7 @@ response, html) => {
             res.json({"movies": tatabanyaVertesCenterMoviesTodayList })
         })
 
-        // Console Log Movies (From Tatabanya Vértes Center Mozi)
-        console.log(tatabanyaVertesCenterMoviesTodayList)
+        // Console Log Movies (From Tatabanya Vértes Center Mozi) <- (DEBUG MOVIES) ->
+        //console.log(tatabanyaVertesCenterMoviesTodayList)       <- (DEBUG MOVIES) ->
     }
 });

@@ -5,6 +5,10 @@
 
 // Imports (React, sseEffect, useState) from react
 import React, { useEffect, useState } from 'react'
+// Import index.css
+import "./index.css"
+// Import backgroundSvgImage03 (Image Name) from "./assets/backgroundImage03.svg"
+import backgroundSvgImage03 from "./assets/backgroundImage03.svg"
 
 // App
 const App = () => {
@@ -26,34 +30,73 @@ const App = () => {
     )
   }, [])
 
-  // App Frontend
-  // If backendData.users === undefined -> Get undefined
-  // Else get them inside <p> - tags
+  // App Frontend Return
+
   return (
 
-    <div>
+    // Class mainDiv
+    <div className="mainDiv">
 
-      <div>
-        <h1>Tatabánya Vértes Center Mozi</h1>
-      </div>
+      <img src={backgroundSvgImage03} alt="BackgroundSvgImage" className="backgroundSvgImage"/>
 
-      <div className="tatabanyaVertesCenterDiv">
+      {/* ---------- Navigation Bar ---------- */}
 
-        <h2>Filmek Most</h2>
+      <nav className="navBar">
 
-        <div className="tatabanyaVertesCenterMovies">
+        {/* Navigation Bar Title */}
 
-          {(typeof backendData.movies === "undefined") ? (
-            <p>Loading...</p>
-          ): (// backendData-ból (server.js-ből) Filmek megszerzése -> kiküldése <p>-tag-ek közé egy <a>-tag-ben (Href Link lesz belőle), number érték növelése minden kiíratásnál
-            backendData.movies.map((movie, i) => (
-              <a href="https://vertescenter.mimozink.hu/" key={i}><p>{number++ + " "}{movie}</p></a>
-            ))
-          )}
+        <a href="index.html" className="navBarTitle"><h1>MoziMajom</h1></a>
 
+        {/* Navigation Bar Href a Link Elements */}
+
+        <ul className="navBarLinkElements">
+          <a href="index.html"><li>Mozi</li></a>
+          <a href="index.html"><li>Rólunk</li></a>
+          <a href="index.html"><li>Beállítások</li></a>
+        </ul>
+
+      </nav>
+
+      {/* ---------- Navigation Bar Over ---------- */}
+
+
+      {/* ---------- Content Container ---------- */}
+
+      <div className="ContentContainer">
+
+        {/* Content Cinema Title */}
+
+        <div className="cinemaTitle01">
+          <h1 className='cinemaTitle'>Tatabánya Vértes Center Mozi</h1>
         </div>
-            
+
+        {/* Cinema: Tatabánya Vértes Center Mozi */}
+
+        <div className="tatabanyaVertesCenterDiv">
+
+          {/* Movies Now Title */}
+
+          <h2>Filmek Most</h2>
+
+          {/* The Movies Get from the server.js (API) */}
+
+          <div className="tatabanyaVertesCenterMovies">
+
+            {(typeof backendData.movies === "undefined") ? (
+              <p>Loading...</p>
+            ): (// backendData-ból (server.js-ből) Filmek megszerzése -> kiküldése <p>-tag-ek közé egy <a>-tag-ben (Href Link lesz belőle), number érték növelése minden kiíratásnál
+              backendData.movies.map((movie, i) => (
+                <a href="https://vertescenter.mimozink.hu/" key={i}><p className="tbanyaCinemaMovieLinkElements">{number++ + " "}{movie}</p></a>
+              ))
+            )}
+
+          </div>
+              
+        </div>
+
       </div>
+
+      {/* ---------- Content Container Over ---------- */}
 
     </div>
     

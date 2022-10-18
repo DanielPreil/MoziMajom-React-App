@@ -9,6 +9,9 @@ import React, { useEffect, useState } from 'react'
 // App
 const App = () => {
 
+  // Incrase Number Data For The Movies
+  let number = 1
+
   // Declare a new State Variable
   const [backendData, setBackendData] = useState(({}))
 
@@ -27,17 +30,33 @@ const App = () => {
   // If backendData.users === undefined -> Get undefined
   // Else get them inside <p> - tags
   return (
+
     <div>
 
-      {(typeof backendData.users === "undefined") ? (
-        <p>Loading...</p>
-      ): (
-        backendData.users.map((user, i) => (
-          <p key={i}>{user}</p>
-        ))
-      )}
+      <div>
+        <h1>Tatabánya Vértes Center Mozi</h1>
+      </div>
+
+      <div className="tatabanyaVertesCenterDiv">
+
+        <h2>Filmek Most</h2>
+
+        <div className="tatabanyaVertesCenterMovies">
+
+          {(typeof backendData.movies === "undefined") ? (
+            <p>Loading...</p>
+          ): (// backendData-ból (server.js-ből) Filmek megszerzése -> kiküldése <p>-tag-ek közé egy <a>-tag-ben (Href Link lesz belőle), number érték növelése minden kiíratásnál
+            backendData.movies.map((movie, i) => (
+              <a href="https://vertescenter.mimozink.hu/" key={i}><p>{number++ + " "}{movie}</p></a>
+            ))
+          )}
+
+        </div>
+            
+      </div>
 
     </div>
+    
   )
 }
 

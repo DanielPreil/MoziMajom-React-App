@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ---------- Kezdő Beállítások ---------- */
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  background-color: rgb(31, 31, 31);
+  color: whitesmoke;
+  font-family: monospace;
+}
+
+/* ---------- Kezdő Beállítások Vége ---------- */
+
+
+/* ---------- Tatabánya Vértes Center Mozi Default CSS ---------- */
+
+.tatabanyaVertesCenterDiv {
+  background-color: rgb(17, 17, 17);
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+  max-width: fit-content;
+  padding: 1.5%;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  transition: 0.2s;
+  background-image: linear-gradient(to right, rgba(0, 102, 185, 0.63) , rgba(225, 0, 255, 0.555));
+}
+
+.tatabanyaVertesCenterDiv:hover {
+  box-shadow: 10px 10px 10px black;
+}
+
+.tatabanyaVertesCenterDiv h1{
+  text-align: center;
+}
+
+.tatabanyaVertesCenterMovies {
+  margin-top: 3%;
+}
+
+.tatabanyaVertesCenterDiv a{
+  text-decoration: none;
+  color: whitesmoke;
+  transition: 0.2s;
+  font-size: 20px;
+}
+
+.tatabanyaVertesCenterDiv a:hover{
+  text-decoration: underline;
+  color: rgb(255, 0, 179);
+}
+
+/* ---------- Tatabánya Vértes Center Mozi Default CSS Vége ---------- */

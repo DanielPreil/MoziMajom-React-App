@@ -21,7 +21,15 @@ const App = () => {
 
   // Fetch Backend Datat Once / loading the page from server.js
   useEffect(() => {
-    fetch("/api").then(
+    fetch("/api1").then(
+      response => response.json()
+    ).then(
+      data => {
+        setBackendData(data)
+      }
+    )
+
+    fetch("/api2").then(
       response => response.json()
     ).then(
       data => {
@@ -29,6 +37,7 @@ const App = () => {
       }
     )
   }, [])
+
 
   // App Frontend Return
 
@@ -86,7 +95,15 @@ const App = () => {
               <p>Loading...</p>
             ): (// backendData-ból (server.js-ből) Filmek megszerzése -> kiküldése <p>-tag-ek közé egy <a>-tag-ben (Href Link lesz belőle), number érték növelése minden kiíratásnál
               backendData.movies.map((movie, i) => (
-                <a href="https://vertescenter.mimozink.hu/" key={i}><p className="tbanyaCinemaMovieLinkElements">{number++ + " "}{movie}</p></a>
+                <a href="index.html" key={i}><p className="tbanyaCinemaMovieLinkElements">{number++ + " "}{movie}</p></a>
+              ))
+            )}
+
+            {(typeof backendData.moviesHrefLinks === "undefined") ? (
+              <p>Loading...</p>
+            ): (// backendData-ból (server.js-ből) Filmek Link megszerzése -> kiküldése <p>-tag-ek közé egy <a>-tag-ben (Href Link lesz belőle), number érték növelése minden kiíratásnál
+              backendData.moviesHrefLinks.map((movie, i) => (
+              <a href="index.html" key={i}><p className="tbanyaCinemaMovieLinkElements">{number++ + " "}{movie}</p></a>
               ))
             )}
 

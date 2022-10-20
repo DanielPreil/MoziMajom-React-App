@@ -9,7 +9,7 @@ const Content = () => {
 
     // Fetch Backend Datat Once / loading the page from server.js
     useEffect(() => {
-      fetch("/api1").then(
+      fetch("/resultTatabanyaVertesCenter").then(
         response => response.json()
       ).then(
         data => {
@@ -46,11 +46,15 @@ const Content = () => {
 
           <div className="tatabanyaVertesCenterMovies">
 
+
             {(typeof backendData.movies === "undefined") ? (
               <p>Loading...</p>
-            ): (// backendData-ból (server.js-ből) Filmek megszerzése -> kiküldése <p>-tag-ek közé egy <a>-tag-ben (Href Link lesz belőle), number érték növelése minden kiíratásnál
+            ): (// backendData-ból (server.js-ből) Filmek megszerzése -> kiküldése <p>-tag-ek közé egy <a>-tag-ben (Href Link lesz belőle), 
+                // number érték növelése minden kiíratásnál, 
+                // <a></a> href=: {backendData.movieLinks[number-1]} backendData-ból való movieLinks szövegek megszerzése (href elréis utak filmeknek), 
+                // és ezek indexelése number (akkori jelenlegi film index)-ből -1 a számolás miatt
               backendData.movies.map((movie, i) => (
-                <a href="index.html" key={i}><p className="tbanyaCinemaMovieLinkElements">{number++ + " "}{movie}</p></a>
+                <a href={backendData.movieLinks[number-1]} key={i}><p className="tbanyaCinemaMovieLinkElements">{number++ + " "}{movie}</p></a>
               ))
             )}
 

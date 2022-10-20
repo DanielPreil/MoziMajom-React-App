@@ -61,10 +61,6 @@ response, html) => {
         // tatabanyaVertesCenterMoviesTodayList értéke legyen egyenlő az eredi listának 0.indextől -> realMovieList (Előzőekben megkapott teljes méret a megfelezett listának)
         let tatabanyaVertesCenterMoviesTodayList = movieList.slice(0,realMovieList)
 
-        // Backend Data Elküldése App.js-nek (Tatabanya Vértes Center Filmek Real Time)
-        app.get("/api1", (req, res) => {
-            res.json({"movies": tatabanyaVertesCenterMoviesTodayList });
-        })
 
         // Console Log -Movies List- (From Tatabanya Vértes Center Mozi) <- (DEBUG MOVIES) ->
         //console.log(tatabanyaVertesCenterMoviesTodayList)       <- (DEBUG MOVIES) ->
@@ -95,13 +91,13 @@ response, html) => {
         // realSiezOfTatabanyaVertesCenterMovieHrefLinks értéke legyen egyenlő az eredi listának 0.indextől -> realhrefMovieLinksLength (Előzőekben megkapott teljes méret a megfelezett listának)
         let realSiezOfTatabanyaVertesCenterMovieHrefLinks = movieListHrefLinks.slice(0,realhrefMovieLinksLength)
 
-        // Backend Data Elküldése App.js-nek (Tatabanya Vértes Center Filmek Href Link Real Time)
-        app.get("/api2", (req, res) => {
-            res.json({"moviesHrefLinks": realSiezOfTatabanyaVertesCenterMovieHrefLinks });
+        // Backend Data Elküldése App.js-nek (Tatabanya Vértes Center Filmek - Tatabanya Vértes Center Filmek Href Link (Elérési Út))
+        app.get("/resultTatabanyaVertesCenter", (req, res) => {
+            res.json({"movies": tatabanyaVertesCenterMoviesTodayList, "movieLinks": realSiezOfTatabanyaVertesCenterMovieHrefLinks});
         })
 
-        // Console Log realSiezOfTatabanyaVertesCenterMovieHrefLinks -HrefLinks List- (From Tatabanya Vértes Center Mozi) <- (DEBUG MOVIES) ->
-        console.log(realSiezOfTatabanyaVertesCenterMovieHrefLinks)
+        // Console Log realSiezOfTatabanyaVertesCenterMovieHrefLinks -HrefLinks List- (From Tatabanya Vértes Center Mozi) <- (DEBUG MOVIE Links) ->
+        // console.log(realSiezOfTatabanyaVertesCenterMovieHrefLinks) <- (DEBUG MOVIE Links) ->
 
         // ---------- Tatabánya Vértes Center Filmek Href Link - Megszerzés Vége ----------
     }

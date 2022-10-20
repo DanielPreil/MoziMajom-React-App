@@ -1,7 +1,7 @@
 // ----- Navbar Component -----
 
 // Import React from react
-import React from 'react'
+import React from "react"
 
 const Navbar = () => {
   return (

@@ -1,7 +1,7 @@
 // ----- Content Component -----
 
 // Import React from react
-import React from 'react'
+import React from "react"
 // Imports (React, useEffect, useState) from react
 import { useState, useEffect } from "react"
 

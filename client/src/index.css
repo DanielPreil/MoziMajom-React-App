@@ -17,9 +17,62 @@ body {
   color: whitesmoke;
   font-family: monospace;
   width: 100%;
+  animation: example2 2s normal ease-in-out;
 }
 
 /* ---------- SetUp Settings Over ---------- */
+
+
+/* ---------- Loading Screen ---------- */
+
+.loadingScreenBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  z-index: 5;
+  animation: backgroundColorOpacityAnimation 2.5s normal forwards ease-in;
+}
+
+.loadingScreenIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  animation: iconOpacityAnimation 3s normal forwards ease-in;
+}
+
+@keyframes iconOpacityAnimation {
+  0%   {opacity: 100%;}
+  15%  {opacity: 85%;}
+  25%  {opacity: 75%;}
+  35%  {opacity: 65%;}
+  50%  {opacity: 50%;}
+  60%  {opacity: 45%;}
+  75%  {opacity: 25%;}
+  85%  {opacity: 15%;}
+  100% {opacity: 0%;}
+  100% {visibility:hidden;}
+}
+
+@keyframes backgroundColorOpacityAnimation {
+  0%   {background-color: rgb(245, 245, 245)}
+  15%   {background-color: rgba(245, 245, 245, 0.849)}
+  25%  {background-color: rgba(245, 245, 245, 0.726)}
+  35%  {background-color: rgba(245, 245, 245, 0.582)}
+  50%  {background-color: rgba(245, 245, 245, 0.521)}
+  65%  {background-color: rgba(245, 245, 245, 0.377)}
+  75%  {background-color: rgba(245, 245, 245, 0.233)}
+  85%   {background-color: rgba(245, 245, 245, 0.062)}
+  100% {background-color: rgba(245, 245, 245, 0);}
+  100% {visibility:hidden;}
+}
+
+/* ---------- Loading Screen Over ---------- */
 
 
 /* ---------- SVG Background Image ---------- */

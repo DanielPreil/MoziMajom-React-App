@@ -4,3 +4,5 @@ export { default as Navbar } from "./Navbar";
 export { default as Content } from "./Content";
 // Export LoadingScreen as Deafault form ./LoadingScreen
 export { default as LoadingScreen } from "./LoadingScreen";
+// Export Footer as Deafault form ./Footer
+export { default as Footer } from "./Footer";

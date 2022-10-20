@@ -80,7 +80,7 @@ response, html) => {
         // ezzel biztosítva a teljes eléréi utat az adott filmek a moziban
         $(".title a").each((index, value) => {
            let movieLinks = $(value).attr("href");
-           movieListHrefLinks.push("https://vertescenter.mimozink.hu/" + movieLinks);
+           movieListHrefLinks.push("https://vertescenter.mimozink.hu" + movieLinks);
         });
 
         // hrefMovieLinksLength értéke legyen egyenlő movieListHrefLinks-ben taralmazott értékek összességének számával

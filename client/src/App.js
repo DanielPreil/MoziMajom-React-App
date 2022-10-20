@@ -11,8 +11,8 @@ import React from "react"
 import "./index.css"
 // Import backgroundSvgImage03 (Image Name) from "./assets/backgroundImage03.svg"
 import backgroundSvgImage03 from "./assets/backgroundImage03.svg"
-// Imports (Navbar, Content, LoadingScreen) from ./components
-import { Navbar, Content, LoadingScreen } from "./components";
+// Imports (Navbar, Content, LoadingScreen, Footer) from ./components
+import { Navbar, Content, LoadingScreen, Footer } from "./components";
 
 // App
 const App = () => {
@@ -34,6 +34,9 @@ const App = () => {
 
       {/* ---------- Content Container (Content Component) ---------- */}
       <Content />
+
+      {/* ---------- Footer Bar (Footer Component) ---------- */}
+      <Footer />
 
     </div>
     

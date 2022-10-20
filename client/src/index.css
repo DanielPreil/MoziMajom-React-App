@@ -78,6 +78,7 @@ body {
 /* ---------- SVG Background Image ---------- */
 
 .backgroundSvgImage {
+  pointer-events: none;
   position: absolute;
   left: 0%;
   top: 0%;
@@ -162,7 +163,7 @@ body {
 /* ---------- Cinema: Tatabánya Vértes Center Mozi Title Over ---------- */
 
 
-/* ---------- Tatabánya Vértes Center Mozi Default CSS ---------- */
+/* ---------- Tatabánya Vértes Center Mozi Data Content ---------- */
 
 .tatabanyaVertesCenterDiv {
   background-color: rgba(14, 14, 14, 0.712);
@@ -219,7 +220,25 @@ body {
   text-shadow: 8px 8px 8px black;
 }
 
-/* ---------- Tatabánya Vértes Center Mozi Default CSS Over ---------- */
+/* ---------- Tatabánya Vértes Center Mozi Data Content Over ---------- */
+
+
+/* ---------- Footer Bar ---------- */
+
+.FooterBar {
+  width: 100%;
+  position: absolute;
+  margin-top: 5%;
+  background-color: #131313cc;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  bottom: 0%;
+  left: 0%;
+}
+
+/* ---------- Footer Bar Over ---------- */
 
 
 /* ---------- Custom Scrollbar ---------- */

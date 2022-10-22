@@ -505,13 +505,103 @@ body {
   }
 
   /* ---------- Footer Bar Over ---------- */
-
 }
 
 /* Smaller Tablets - Avarage Tablets */
 /* @media screen Események Között: min-width:511px and max-width:1000px */
 @media only screen and (min-width:511px) and (max-width:1000px) {
-    
+
+  /* ---------- SVG Background Image ---------- */
+
+  .backgroundSvgImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ---------- SVG Background Image Over ---------- */
+
+  /* ---------- Navigation Bar ---------- */
+
+  .navBar {
+    display: flex;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+  }
+  
+  .navBarTitle {
+    padding-left: 1.5%;
+    font-size: 19px;
+    color: whitesmoke;
+  }
+  
+  .navBarLinkElements {
+    gap: 15%;
+    margin-right: 12%;
+    font-size: 20px;
+  }
+
+  /* ---------- Navigation Bar Over ---------- */
+
+  /* ---------- Cinema: Tatabánya Vértes Center Mozi Title ---------- */
+
+  .cinemaTitle01 {
+    padding: 2%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    font-size: 13px;
+    border: 3px solid whitesmoke;
+    transition: 0.2s;
+  }
+
+  /* ---------- Cinema: Tatabánya Vértes Center Mozi Title Over ---------- */
+
+  /* ---------- Tatabánya Vértes Center Mozi Data Content ---------- */
+
+  .tatabanyaVertesCenterDiv {
+    box-shadow: 10px 10px 10px black;
+    border-radius: 10px;
+    width: 480px;
+    padding: 3%;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.2s;
+    backdrop-filter: blur(5px);
+  }
+
+  
+  .tatabanyaVertesCenterMovies {
+    margin-top: 3.5%;
+  }
+  
+  .tbanyaCinemaMovieLinkElements {
+    margin-top: 3%;
+  }
+  
+  .tatabanyaVertesCenterDiv a{
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.2s;
+    font-size: 20px;
+  }
+  
+  /* ---------- Tatabánya Vértes Center Mozi Data Content Over ---------- */
+  
+  /* ---------- Footer Bar ---------- */
+
+  .FooterBar {
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+    margin-top: 15%;
+    font-size: 8px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  /* ---------- Footer Bar Over ---------- */
 }
 
 /* Smaller Monitors */

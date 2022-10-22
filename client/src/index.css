@@ -227,7 +227,7 @@ body {
 
 .FooterBar {
   width: 100%;
-  position: absolute;
+  position: relative;
   margin-top: 5%;
   background-color: #131313cc;
   text-align: center;
@@ -272,7 +272,121 @@ body {
 /* Smaller Mobiles */
 /* @media screen Események Között: min-width:0px and max-width:352px */
 @media only screen and (min-width: 0px) and (max-width: 352px) {
+
+  /* ---------- SVG Background Image ---------- */
+
+  .backgroundSvgImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ---------- SVG Background Image Over ---------- */
+
+  /* ---------- Navigation Bar ---------- */
+
+  .navBar {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-top: 0%;
+  }
+
+  .navBarTitle {
+    font-size: 20px;
+    margin-top: 0%;
+  }
+
+  .navBarLinkElements {
+    display: inline-flex;
+    margin-top: 3%;
+    padding-bottom: 3%;
+    gap: 7%;
+    text-align: center;
+    font-size: 18px; 
+  }
+
+  /* ---------- Navigation Bar Over ---------- */
+
+  /* ---------- Cinema: Tatabánya Vértes Center Mozi Title ---------- */
+
+  .cinemaTitle01 {
+    padding: 3%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    font-size: 10px;
+    border: 2px solid whitesmoke;
+    transition: 0.2s;
+  }
+
+  /* ---------- Cinema: Tatabánya Vértes Center Mozi Title Over ---------- */
+
+  /* ---------- Tatabánya Vértes Center Mozi Data Content ---------- */
+
+  .tatabanyaVertesCenterDiv {
+    box-shadow: 10px 10px 10px black;
+    border-radius: 10px;
+    width: 270px;
+    padding: 3%;
+    font-size: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.2s;
+    backdrop-filter: blur(5px);
+  }
   
+  .tatabanyaVertesCenterDiv:hover {
+    box-shadow: 10px 10px 10px black;
+    border-left: none;
+    transition: 0.2s;
+  }
+  
+  .tatabanyaVertesCenterDiv:hover h2{
+    transition: 0.2s;
+  }
+  
+  .tatabanyaVertesCenterDiv:hover h2{
+    color: whitesmoke;
+    text-shadow: none;
+  }
+  
+  .tatabanyaVertesCenterMovies {
+    margin-top: 3.5%;
+  }
+  
+  .tbanyaCinemaMovieLinkElements {
+    margin-top: 5%;
+  }
+  
+  .tatabanyaVertesCenterDiv a{
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.2s;
+    font-size: 18px;
+  }
+  
+  .tatabanyaVertesCenterDiv a:hover{
+    text-decoration: underline;
+    color: rgb(255, 0, 149);
+    text-shadow: 8px 8px 8px black;
+  }
+
+  /* ---------- Tatabánya Vértes Center Mozi Data Content Over ---------- */
+
+  /* ---------- Footer Bar ---------- */
+
+  .FooterBar {
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+    margin-top: 25%;
+    font-size: 6px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  /* ---------- Footer Bar Over ---------- */
 }
 
 /* Avarage Mobiles (Example: Redmi Note 9 Pro) */
@@ -297,7 +411,7 @@ body {
   }
 
   .navBarTitle {
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 5%;
   }
 
@@ -306,11 +420,10 @@ body {
     margin-top: 5%;
     gap: 7%;
     text-align: center;
-    font-size: 20px; 
+    font-size: 21px; 
   }
 
   /* ---------- Navigation Bar Over ---------- */
-
 
   /* ---------- Cinema: Tatabánya Vértes Center Mozi Title ---------- */
 
@@ -324,7 +437,6 @@ body {
   }
 
   /* ---------- Cinema: Tatabánya Vértes Center Mozi Title Over ---------- */
-
 
   /* ---------- Tatabánya Vértes Center Mozi Data Content ---------- */
 
@@ -377,12 +489,14 @@ body {
   }
 
   /* ---------- Tatabánya Vértes Center Mozi Data Content Over ---------- */
-
   
   /* ---------- Footer Bar ---------- */
 
   .FooterBar {
-    margin-top: 5%;
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+    margin-top: 25%;
     font-size: 6px;
     padding-left: 3%;
     padding-right: 3%;

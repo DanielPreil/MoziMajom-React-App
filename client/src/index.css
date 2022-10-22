@@ -78,6 +78,8 @@ body {
 /* ---------- SVG Background Image ---------- */
 
 .backgroundSvgImage {
+  width: 100%;
+  height: 100%;
   pointer-events: none;
   position: absolute;
   left: 0%;
@@ -569,7 +571,6 @@ body {
     backdrop-filter: blur(5px);
   }
 
-  
   .tatabanyaVertesCenterMovies {
     margin-top: 3.5%;
   }
@@ -607,7 +608,8 @@ body {
 /* Smaller Monitors */
 /* @media screen Események Között: min-width:1000px and max-width:1460px */
 @media only screen and (min-width:1000px) and (max-width:1460px) {
-    /* ---------- SVG Background Image ---------- */
+  
+  /* ---------- SVG Background Image ---------- */
 
   .backgroundSvgImage {
     width: 100%;
@@ -665,7 +667,6 @@ body {
     backdrop-filter: blur(5px);
   }
 
-  
   .tatabanyaVertesCenterMovies {
     margin-top: 3.5%;
   }
@@ -703,7 +704,63 @@ body {
 /* Avarage Monitors */
 /* @media screen Események Között: min-width:1460px and max-width:1920px */
 @media only screen and (min-width:1460px) and (max-width:1920px) {
-    
+
+  /* ---------- Navigation Bar ---------- */
+
+  .navBarTitle {
+    font-size: 22px;
+  }
+
+  .navBarLinkElements {
+    margin-right: 5.5%;
+  }
+
+  /* ---------- Navigation Bar Over ---------- */
+
+  /* ---------- Cinema: Tatabánya Vértes Center Mozi Title ---------- */
+
+  .cinemaTitle01 {
+    margin-top: 3.5%;
+    margin-bottom: 2.5%;
+    font-size: 18px;
+    border: 4px solid whitesmoke;
+    transition: 0.2s;
+  }
+
+  /* ---------- Cinema: Tatabánya Vértes Center Mozi Title Over ---------- */
+
+  /* ---------- Tatabánya Vértes Center Mozi Data Content ---------- */
+
+  .tatabanyaVertesCenterMovies {
+    margin-top: 1.5%;
+    margin-bottom: 0%;
+  }
+  
+  .tbanyaCinemaMovieLinkElements {
+    margin-top: 1%;
+  }
+  
+  .tatabanyaVertesCenterDiv a{
+    font-size: 22px;
+  }
+  
+  /* ---------- Tatabánya Vértes Center Mozi Data Content Over ---------- */
+  
+  /* ---------- Footer Bar ---------- */
+
+  .FooterBar {
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+    margin-top: 6%;
+    font-size: 9px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1.3%;
+    padding-bottom: 1.3%;
+  }
+
+  /* ---------- Footer Bar Over ---------- */
 }
 
 /* ---------- Media Queries (Website Responsivity On Each Devices) Over ---------- */

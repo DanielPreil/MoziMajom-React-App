@@ -763,4 +763,66 @@ body {
   /* ---------- Footer Bar Over ---------- */
 }
 
+/* @media screen Események Között: min-width:1920px */
+@media only screen and (min-width:1920px) {
+
+  /* ---------- Navigation Bar ---------- */
+
+  .navBarTitle {
+    font-size: 23px;
+  }
+
+  .navBarLinkElements {
+    margin-right: 5.5%;
+    font-size: 25px;
+  }
+
+  /* ---------- Navigation Bar Over ---------- */
+
+  /* ---------- Cinema: Tatabánya Vértes Center Mozi Title ---------- */
+
+  .cinemaTitle01 {
+    margin-top: 3.5%;
+    margin-bottom: 2.5%;
+    font-size: 18px;
+    border: 4px solid whitesmoke;
+    transition: 0.2s;
+  }
+
+  /* ---------- Cinema: Tatabánya Vértes Center Mozi Title Over ---------- */
+
+  /* ---------- Tatabánya Vértes Center Mozi Data Content ---------- */
+
+  .tatabanyaVertesCenterMovies {
+    margin-top: 1.5%;
+    margin-bottom: 0%;
+  }
+  
+  .tbanyaCinemaMovieLinkElements {
+    margin-top: 1.5%;
+  }
+  
+  .tatabanyaVertesCenterDiv a{
+    font-size: 24px;
+  }
+  
+  /* ---------- Tatabánya Vértes Center Mozi Data Content Over ---------- */
+  
+  /* ---------- Footer Bar ---------- */
+
+  .FooterBar {
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+    margin-top: 10%;
+    font-size: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1.3%;
+    padding-bottom: 1.3%;
+  }
+
+  /* ---------- Footer Bar Over ---------- */
+}
+
 /* ---------- Media Queries (Website Responsivity On Each Devices) Over ---------- */
